@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&family=Roboto&family=Titan+One&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1c1c1c;
+}
+
+/* Welcome */
+
+#welcome-section{
+    height: 100vh;
+}
+
+#navbar-container{
+    display: flex;
+    justify-content: center;
+    top: 1rem;
+    width: 100%;
+    z-index: 100;
+}
+
+#navbar{
+    background-color: #1c1c1c;
+    padding: 0.8rem 2rem;
+    border-radius: 50rem;
+    border: 3px solid #53EA74;
+    width: 110rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'titan one';
+    font-size: 4rem;
+    margin-bottom: 8rem;
+    position: fixed;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#title-rectangle-wrap{
+    transform: rotate(-1deg);
+    max-width: 65%;
+    height: 50rem;
+    padding: 3px;
+    margin: auto;
+    background: linear-gradient(to bottom right, #83EA53, #13D3A5);
+    margin-bottom: 30rem;
+    margin-top: 10rem;
+}
+
+#title-rectangle{
+    background-color: #1c1c1c;
+    width: 100%;
+    height: 100%;
+    font-family: 'poller one';
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title-rectangle h1{
+    color: #13EA4F;
+    text-transform: uppercase;
+    font-size: 28rem;
+    transform: rotate(5deg);
+    text-shadow: -1rem -1rem #0C7529;
+}
+
+#title-rectangle h2{
+    color: white;
+    text-transform: uppercase;
+    font-size: 14rem;
+    transform: rotate(-2deg);
+    margin-top: -1.9rem;
+    text-shadow: -0.7rem -0.7rem #A4A2A2;
+}
+
+/* About me */
+
+#about-me{
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(images/aboutme-background.png);
+    background-repeat: no-repeat;
+    background-size: 70rem;
+    background-position: center;
+}
+
+#about-me-text {
+    text-align: center;
+    width: 45%;
+    z-index: 1;
+}
+
+#about-me-text h1{
+    font-family: 'titan one';
+    background: -webkit-linear-gradient(#13EA4F, #13D3A5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    text-align: center;
+}
+
+#about-me-text p{
+    color: white;
+    font-size: 2rem;
+    font-family: roboto;
+    text-shadow: -2px -2px #a9a9a9;
+}  /* My work */
+
+#projects{
+    padding-top: 5rem;
+    min-height: 100vh;
+    margin-top: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(images/mywork-background.png);
+    background-repeat: no-repeat;
+    background-size: 65rem;
+    background-position: center;
+}
+
+#mywork-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mywork-container h1{
+    font-size: 4rem;
+    font-family: 'titan one';
+    background: -webkit-linear-gradient(#13EA4F, #13D3A5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    align-self: center;
+}
+
+#mywork{
+    margin-top: 3rem;
+    display: flex;
+    display: grid;
+    grid-template: 40% 40% / 32% 32% 32%;
+    grid-column-gap: 2rem;
+    grid-row-gap: 5rem;
+    width: 85%;
+}
+
+#mywork img{
+    width: 100%;
+    height: 100%;
+}
+
+#elmarket{
+    width: 85%;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+    transition: .15s;
+}
+
+#elmarket:hover{
+    transform: scale(1.1);
+}
+
+#glass-page{
+    width: 95%;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+    transition: .15s;
+}
+
+#glass-page:hover{
+    transform: scale(1.1);
+}
+
+#tribute-page{
+    height: 100%;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    transition: .15s;
+}
+
+#tribute-page:hover{
+    transform: scale(1.1);
+}
+
+#technical-documentation-page{
+    height: 100%;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    transition: .15s;
+}
+
+#technical-documentation-page:hover{
+    transform: scale(1.1);
+}
+
+#survey-form{
+    height: 100%;
+    width: 85%;
+    align-self: center;
+    justify-self: center;
+    transition: .15s;
+}
+
+#survey-form:hover{
+    transform: scale(1.1);
+}
+
+#landing-page{
+    height: 100%;
+    width: 75%;
+    align-self: center;
+    justify-self: center;
+    transition: .15s;
+}
+
+#landing-page:hover{
+    transform: scale(1.1);
+}
+
+#button{
+    margin: 20rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+#github{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    padding: 1rem;
+    font-family: 'titan one';
+    font-size: 2rem;
+    padding: .5rem 3rem;
+    border: solid 3px transparent;
+    color: #5DE3A3;
+    background: -webkit-linear-gradient(#13D360, #13D3B1), linear-gradient(101deg, #13D360, #13D3B1);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #1c1c1c inset;
+    transition: all .15s;
+}
+
+button:hover{
+    outline: none;
+    transform: scale(1.1);
+}
+
+/* Media queries */
+
+@media (max-width: 1600px){
+    
+    /* Welcome */
+    
+    #navbar{
+        font-size: 3rem;
+        width: 85rem;
+    }
+
+    #title-rectangle h1{
+        font-size: 20rem;
+    }
+
+    #title-rectangle h2{
+        font-size: 10rem;
+    }
+
+    #title-rectangle-wrap{
+        height: 34rem;
+    }
+
+    /* My work */
+
+    #mywork{
+        grid-template: 28% 28% 28% / 48.8% 48.8%;
+    }
+}
+
+@media (max-width: 1300px){
+    
+    /* Welcome */
+    
+    #navbar{
+        font-size: 2.3rem;
+        width: 75rem;
+    }
+
+    #title-rectangle h1{
+        font-size: 16rem;
+    }
+
+    #title-rectangle h2{
+        font-size: 8rem;
+    }
+
+    #title-rectangle-wrap{
+        height: 28rem;
+    }
+}
+
+@media (max-width: 1000px){
+    
+    /* Welcome */
+    
+    #navbar{
+        font-size: 2rem;
+        width: 50rem;
+    }
+
+    #title-rectangle h1{
+        font-size: 12rem;
+    }
+
+    #title-rectangle h2{
+        font-size: 6rem;
+    }
+
+    #title-rectangle-wrap{
+        height: 20rem;
+        margin-top: 14rem;
+    }
+}
+
+@media (max-width: 800px){
+    
+    /* Welcome */
+    
+    #navbar{
+        font-size: 1.5rem;
+        width: 40rem;
+    }
+
+    #title-rectangle h1{
+        font-size: 10rem;
+        text-shadow: -0.7rem -0.7rem #0C7529;
+    }
+
+    #title-rectangle h2{
+        font-size: 5rem;
+        text-shadow: -0.4rem -0.4rem #A4A2A2;
+    }
+
+    #title-rectangle-wrap{
+        height: 16rem;
+        margin-top: 18rem;
+    }
+
+    /* About me */
+
+    #about-me-text h1{
+        font-size: 3rem;
+    }
+
+    #about-me-text p{
+        font-size: 1.8rem;
+        text-shadow: -1.7px -1.7px #a9a9a9;
+    }
+
+    /* My work */
+     
+    #mywork{
+        grid-template: 13.2% 13.2% 13.2% 13.2% 13.2% 13.2% / 97.6%;
+        width: 70%;
+    }
+
+    #mywork-container h1{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    /* Welcome */
+    
+    #navbar{
+        font-size: 1rem;
+        border: 2px solid #53EA74;
+        width: 30rem;
+    }
+
+    #title-rectangle h1{
+        font-size: 8rem;
+    }
+
+    #title-rectangle h2{
+        font-size: 4rem;
+    }
+
+    #title-rectangle-wrap{
+        height: 13rem;
+    }
+
+    /* About me */
+
+    #about-me{
+        background-size: 50rem;
+    }
+
+    #about-me-text h1{
+        font-size: 2.5rem;
+    }
+
+    #about-me-text p{
+        font-size: 1.5rem;
+    }
+
+    /* My work */
+
+    #mywork-container h1{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 500px){
+    
+    /* Welcome */
+    
+    #navbar{
+        width: 25rem;
+    }
+    
+    #title-rectangle h1{
+        font-size: 6rem;
+        margin-bottom: 1rem;
+        text-shadow: -0.4rem -0.4rem #0C7529;
+    }
+
+    #title-rectangle h2{
+        font-size: 3.5rem;
+        text-shadow: -0.3rem -0.3rem #A4A2A2;
+    }
+    
+    /* My work */
+
+    #projects{
+         background-size: 50rem;
+     }
+
+    #title-rectangle-wrap{
+        height: 10.5rem;
+        margin-top: 20rem;
+    }
+}
+
+@media (max-width: 420px) {
+    
+    /* Welcome */
+    
+    #navbar{
+        font-size: 0.8rem;
+        width: 20rem;
+    }
+    
+    #title-rectangle h1{
+        font-size: 5rem;
+        text-shadow: -0.3rem -0.3rem #0C7529;
+    }
+
+    #title-rectangle h2{
+        font-size: 3rem;
+    }
+    
+    #title-rectangle-wrap{
+        height: 9rem;
+    }
+    
+    /* About me */
+
+    #about-me{
+        background-size: 40rem;
+    }
+
+    /* My work */
+
+    #projects{
+        background-size: 40rem;
+    }
+    
+    #github{
+        border: solid 2px transparent;
+    }
+}
+
+@media (max-width: 375px){
+    
+    /* Welcome */
+    
+    #navbar{
+        font-size: 0.6rem;
+        border: 1px solid #53EA74;
+        width: 17rem;
+        padding: 0.5rem 1.5rem
+    }
+    
+    #title-rectangle h1{
+        font-size: 4.5rem;
+    }
+
+    #title-rectangle h2{
+        font-size: 2.5rem;
+        text-shadow: -0.2rem -0.2rem #A4A2A2;
+    }
+
+    #title-rectangle-wrap{
+        height: 8rem;
+        padding: 2px;
+    }
+
+    /* About me */
+
+    #about-me{
+        background-size: 30rem;
+    }
+
+    #about-me-text h1{
+        font-size: 2rem;
+    }
+
+    #about-me-text p{
+        font-size: 1.2rem;
+    }
+
+    /* My work */
+
+    #mywork-container h1{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 300px){
+       
+    /* Welcome */
+    
+    #navbar{
+        width: 15rem;
+    }
+    
+    #title-rectangle h1{
+        font-size: 4rem;
+    }
+
+    #title-rectangle h2{
+        font-size: 2.2rem;
+    }
+
+    #title-rectangle-wrap{
+        height: 7rem;
+    }
+
+    /* About me */
+
+    #about-me{
+        background-size: 20rem;
+    }
+
+    #about-me-text h1{
+        font-size: 1.8rem;
+    }
+
+    #about-me-text p{
+        font-size: 0.8rem;
+        text-shadow: -1px -1px #A4A2A2;
+    }
+
+    /* My work */
+
+    #projects{
+        background-size: 30rem;
+    }
+
+    #mywork-container h1{
+        font-size: 1.8rem;
+    }
+    
+    #elmarket{
+        width: 85%;
+        height: 80%;
+        align-self: center;
+        justify-self: center;
+        transition: .15s;
+    }
+    #glass-page{
+        width: 95%;
+        height: 80%;
+        align-self: center;
+        justify-self: center;
+        transition: .15s;
+    }
+    #tribute-page{
+        height: 80%;
+        width: 80%;
+        align-self: center;
+        justify-self: center;
+        transition: .15s;
+    }
+    #technical-documentation-page{
+        height: 80%;
+        width: 80%;
+        align-self: center;
+        justify-self: center;
+        transition: .15s;
+    }
+    #survey-form{
+        height: 80%;
+        width: 85%;
+        align-self: center;
+        justify-self: center;
+        transition: .15s;
+    }
+    #landing-page{
+        height: 80%;
+        width: 75%;
+        align-self: center;
+        justify-self: center;
+        transition: .15s;
+    }
+
+    #github{
+        font-size: 1.5rem;
+        padding: .5rem 2rem;
+    }
+}
+
+@media (max-height: 750px){
+    #about-me{
+        height: 150vh;
+    }
+}
+
+@media (max-height: 550px){
+    #about-me{
+        height: 200vh;
+    }
+}
+
+@media (max-height: 40px){
+    #about-me{
+        height: 300vh;
+    }
+}
